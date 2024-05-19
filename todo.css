@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wcontainer {
+    display: flex;
+    
+    background: linear-gradient(rgba(142, 232, 233, 0.266),rgba(220, 233, 233, 0.003));
+}
+
+.logout{
+    margin-top: 22rem;
+    padding: 10px 4rem;
+    font-weight: 500;
+    
+}
+
+.logout button{
+    border-style: none;
+    border-radius: 15%;
+    font-size: 16px;
+}
+
+.logout button a{
+    text-decoration: none;
+    color: #555;
+}
+
+.left {
+    background-color: #77c4cb4f;
+    width: 20%;
+    height: auto;
+}
+
+.inputs {
+    margin-right: 20px;
+}
+
+.left img {
+    width: 10rem;
+    height: 10rem;
+    padding-bottom: 6%;
+    padding-left: 22%;
+    padding-top: 4rem;
+}
+
+.select {
+    margin-left: 3.5rem;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.left p {
+    padding: 10px 4rem;
+    font-weight: 500;
+    color: rgba(13, 13, 83, 0.741);
+}
+
+input[type=button] {
+    padding: 6px 10px;
+}
+
+.filter {
+    height: 30px;
+    width: 30px;
+}
+
+.a {
+    display: flex;
+    margin-top: 20px;
+}
+
+.right h1 {
+    text-align: center;
+    color: rgb(13, 13, 139);
+}
+
+.right {
+   
+    padding-top: 3rem;
+    padding-left: 5rem;
+    height: 100vh;
+    width: 1000px;
+    
+}
+
+.b {
+    margin-left: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+.newtask {
+    border-radius: 7px;
+    margin-top: 20px;
+    text-align: center;
+    height: 2.5rem;
+    width: 56rem;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.newtask:hover {
+    background-color: rgb(81, 81, 155);
+    color: #fff;
+}
+
+.newtask p {
+    font-size: 16px;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.4;
+    display: none;
+}
+
+.insert p {
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.insert {
+    position: fixed;
+    top: 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 2.5rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 2;
+}
+
+.edi {
+    position: fixed;
+    top: 40%;
+    z-index: 4;
+    left: 45%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.del {
+    position: fixed;
+    top: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    display: none;
+    z-index: 3;
+    left: 45%;
+}
+
+.cc {
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.cc:hover {
+    color: darkblue;
+    background-color: #d5cece;
+}
+
+.de:hover {
+    color: red;
+    background-color: #d5cece;
+}
+
+.de {
+    border-color: #f44336;
+    margin-left: 15px;
+    color: #f44336;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.edi p {
+    margin-bottom: 10px;
+}
+
+.edi input {
+    width: 15rem;
+    height: 1.7rem;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cb {
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+    padding: 6px 15px;
+}
+
+.cb:hover {
+    color: darkblue;
+    background-color: #d5cece;
+}
+
+.eb {
+    padding: 6px 15px;
+    margin-left: 10px;
+    border-color: rgb(200, 195, 38);
+    border-radius: 5px;
+    color: rgb(162, 157, 4);
+}
+
+.insert input[type=text] {
+    width: 17rem;
+    height: 2rem;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.insert select {
+    width: 17rem;
+    height: 2rem;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+.add {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-color: rgb(8, 147, 8);
+    color: rgb(8, 147, 8);
+    border-radius: 5px;
+}
+
+.cancel {
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.cancel:hover {
+    color: darkblue;
+    background-color: #d5cece;
+}
+
+.add:hover {
+    color: green;
+    background-color: #d5cece;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 15px;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.container .tasktext {
+    flex: 1;
+}
+
+
+.container .editicon,
+.container .deleteicon {
+    cursor: pointer;
+    color: #555;
+    margin-left: 25px;
+}
+
+.deleteicon {
+    margin-right: 30px;
+}
+
+.container .editicon:hover,
+.container .deleteicon:hover {
+    color: #f44336;
+}
+
+.hidden {
+    display: none;
+}

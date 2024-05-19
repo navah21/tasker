@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="wcontainer">
+        <div class="left">
+            <img src="i2.webp" alt="">
+            <p>Tasks</p>
+            <select name="select" class="select" id="">
+                <option value="all">All</option>
+                <option value="none">None</option>
+                <option value="home">Home</option>
+                <option value="school">School</option>
+                <option value="shopping">Shopping</option>
+            </select>
+            <p>Settings</p>
+            <div class="logout">
+               <button> <a href="task.html">Log out</a></button> 
+            </div>
+        </div>
+        <div class="right">
+            <h1>All Your Tasks</h1>
+            <div class="a">
+                <div class="task">
+                    <p>Task</p>
+                </div>
+                <div class="b">
+                    <input type="button" value="All" onclick="filterTasks('all')">
+                    <input type="button" value="Done" onclick="filterTasks('done')">
+                    <input type="button" value="Not done" onclick="filterTasks('notdone')">                    
+                    <img src="filter.png" class="filter" alt="">                    
+                </div>
+            </div>
+            <ul id="taskList"></ul>
+            <button onclick="task()" class="newtask">
+                <p>New Task</p>
+            </button>
+            <div class="black"></div>
+            <div class="insert">
+                <p>Insert name</p>
+                <input type="text" id="taskInput" placeholder="Task name">
+                <p>select a category</p>
+                <select id="categorySelect"> 
+                    <option value="none">None</option>
+                    <option value="home">Home</option>
+                    <option value="school">School</option>
+                    <option value="shopping">Shopping list</option>
+                </select>
+                <div class="button">
+                    <button onclick="cancel()" class="cancel">Cancel</button>
+                    <button onclick="addTask()" class="add">Add</button>
+                </div>
+            </div>
+            <div class="del">
+                <p>Do you want to delete this task?</p>
+                <button class="cc" id="cancelBtn">Cancel</button>
+                <button class="de" id="deleteBtn">Delete</button>
+            </div>
+            <div class="edi">
+                <p>Add New Task</p>
+                <input type="text" id="newTaskInput"> <br>
+                <button class="cb" id="cancelBtnEdit">Cancel</button>
+                <button class="eb" id="editBtn">Edit</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
